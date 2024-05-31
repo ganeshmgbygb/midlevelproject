@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Popup contact form</title>
+<link href="./style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body id="body" style="overflow:hidden;">
+<div id="abc" style="display:none;">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<!-- Contact Us Form -->
+<form id="form" name="form" onsubmit="check_empty(event)">
+<div id="close" onclick="div_hide()">X</div> 
+<h2>Login</h2>
+<hr>
+<input id="name" name="name" placeholder="username" type="text">
+<input id="email" name="email" placeholder="password" type="password">
+<i class="fa-solid fa-eye-slash" id="eye"></i>
+<button type="button" onclick="check_empty()" id="submit">Send</button>
+</form>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+<!-- Display Popup Button -->
+
+<div class="wrap">
+    <div class="search">
+       <input type="text" class="searchTerm" placeholder="What are you looking for?">
+       <button type="submit" class="searchButton">
+         <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <button id="popup" onclick="div_show()">Login</button>
+ </div>
+ 
+<div id="tableContainer" class="table-container">
+<table id="table">
+    <thead>
+        <tr >
+            <th>ID</th>
+            <th>UserName</th>
+            <th>password</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+        <tr id="tr">
+           
+        </tr>
+    </tbody>
+</table>
+</div>
+<script src="./ab.js"></script>
+</body>
+</html>

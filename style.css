@@ -1,0 +1,245 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+/*----------------------------------------------
+CSS settings for HTML div Exact Center
+------------------------------------------------*/
+*{
+  padding: 0%;
+  margin: 0%;
+}
+#abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+#close {
+  color: #fff;
+  font-size:150%;
+position:absolute;
+right:-14px;
+top:-14px;
+cursor:pointer
+
+}
+div#popupContact {
+position:absolute;
+left:50%;
+top:17%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif
+}
+form {
+  height:300px;
+max-width:360px;
+min-width:350px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff
+}
+p {
+margin-top:30px
+}
+h2 {
+background-color:#FEFFED;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+#name {
+width:82%;
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway
+}
+#email {
+  display: inline;
+  width:82%;
+  padding:10px;
+  margin-top:30px;
+  border:1px solid #ccc;
+  padding-left:40px;
+  font-size:16px;
+  font-family:raleway
+  }
+  #add{
+    display:none;
+  }
+  #eye{
+    position: absolute;
+    top: 60%;
+    left: 80%;
+  }
+
+#submit {
+  margin-top:9% ;
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:#FFBC00;
+color:#fff;
+border:1px solid #FFCB00;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+span {
+color:red;
+font-weight:700
+}
+#popup {
+margin: 10px;
+width:10%;
+height:45px;
+border-radius:9px;
+background-color:#3131d3;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px;
+cursor:pointer
+
+
+}
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders between cells are merged */
+  /* margin: 50px 0; */
+  font-size: 0.9em;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+/* Header styles */
+thead th {
+  background-color: #009879; /* A deep green */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Highlight the first column */
+tbody td:first-child {
+  font-weight: bold;
+  color: #009879;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.search {
+  width: 30%;
+  position: relative;
+  display: flex;
+  margin: 10px;
+}
+
+.searchTerm {
+  height: 40px !important;
+  width: 100%;
+  border: 3px solid #3131d3;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-size: x-large;
+}
+
+.searchTerm:focus{
+  color:#009879;
+}
+
+.searchButton {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #3b6cc2;
+  background:#3f54cd;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between ;
+  /* transform: translate(-50%, -50%); */
+}
+@media (max-width: 768px) {
+  /* .wrap {
+      
+  } */
+  #submit {
+      font-size: 16px;
+  }
+  button {
+      width: 30%;
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap {
+      width: 90%;
+      left: 50%;
+      top: 6%;
+  }
+  #submit {
+      font-size: 14px;
+  }
+  button {
+      width: 40%;
+      font-size: 14px;
+  }
+} 
+@media (max-width: 320px) {
+  .wrap {
+      width: 90%;
+      left: 50%;
+      top:1%
+  }
+  #submit {
+      font-size: 14px;
+  }
+  button {
+      width: 40%;
+      font-size: 14px;
+  }
+} 
